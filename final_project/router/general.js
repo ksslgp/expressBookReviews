@@ -105,7 +105,7 @@ public_users.get('/title/:title', function (req, res) {
   })
     .then((data) => res.status(200).send(JSON.stringify(data)))
     .catch((error) => res.status(404).json({ message: "Title not found" }));
-/*
+/* Task 4 -- without Promise
   const title = req.params.title;
   let booktitleArray = Object.values(books).filter((element) => { return element.title === title });
   // Check if the book with the given title exists
